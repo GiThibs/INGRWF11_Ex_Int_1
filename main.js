@@ -1,3 +1,5 @@
-// import fctTest from "./js/test.js";
+import {$btnAfter, $btnBefore} from "./js/evalEtudiant.js";
 
-// fctTest()
+$btnAfter()
+
+$btnBefore()
