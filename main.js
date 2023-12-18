@@ -1,3 +1,3 @@
-import fctTest from "./js/test.js";
+// import fctTest from "./js/test.js";
 
-fctTest()
+// fctTest()
