@@ -10,10 +10,6 @@
   font-family: Verdana;
 }
 
-.hidden {
-  display: none;
-}
-
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
