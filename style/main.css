@@ -10,6 +10,10 @@
   font-family: Verdana;
 }
 
+.hidden {
+  display: none;
+}
+
 .page {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -18,7 +22,6 @@
       flex-wrap: wrap;
   width: 100%;
   height: 100vh;
-  background-color: rgb(90, 255, 255);
 }
 .page__left {
   display: -webkit-box;
@@ -95,4 +98,101 @@
   -webkit-margin-end: 1rem;
           margin-inline-end: 1rem;
   border: 1px solid black;
+}
+
+.formulaire__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 8rem;
+}
+.formulaire__header__nav {
+  width: 30%;
+}
+.formulaire__header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 70%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+.formulaire__header__info__item {
+  padding-inline: 1rem;
+  border: 1px solid black;
+  border-style: none solid none none;
+}
+.formulaire__header__info__item:last-child {
+  border: none;
+}
+.formulaire__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgb(209, 209, 209);
+  width: 100%;
+  text-align: center;
+}
+.formulaire__form__fieldset {
+  width: 100%;
+  height: calc(100vh - 16rem);
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+.formulaire__form__fieldset h1 {
+  width: 100%;
+  margin-block: 1rem;
+}
+.formulaire__form__fieldset label {
+  width: 20%;
+  height: 12rem;
+  border: 2px solid black;
+  padding: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+.formulaire__form__fieldset input[type=radio] {
+  margin-block: 1rem;
+  display: none;
+}
+.formulaire__form__fieldset input[type=radio]:checked + label {
+  border: 2px solid green;
+}
+.formulaire__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  height: 8rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

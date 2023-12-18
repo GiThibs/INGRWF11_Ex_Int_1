@@ -1,0 +1,68 @@
+.formulaire {
+    &__header {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 100%;
+        height: 8rem;
+        &__nav {
+            width: 30%;
+        }
+        &__info {
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            justify-content: end;
+            &__item {
+                padding-inline: 1rem;
+                border: 1px solid black;
+                border-style: none solid none none;
+            }
+            &__item:last-child {
+                border: none;
+            }
+        }
+    }
+    &__form {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(209, 209, 209);
+        width: 100%;
+        text-align: center;
+        &__fieldset {
+            width: 100%;
+            height: calc(100vh - 16rem);
+            border: none;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-content: space-evenly;
+            h1 {
+                width: 100%;
+                margin-block: 1rem;
+            }
+            label {
+                width: 20%;
+                height: 12rem;
+                border: 2px solid black;
+                padding: 1rem;
+                margin-block-end: 1rem;
+            }
+            input[type="radio"] {
+                margin-block: 1rem;
+                display: none;
+            }
+            input[type="radio"]:checked + label {
+                border: 2px solid green;
+            }
+        }
+    }
+    &__footer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 8rem;
+        justify-content: space-evenly;
+        align-content: space-evenly;
+    }
+}
