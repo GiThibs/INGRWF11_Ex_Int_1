@@ -1,0 +1,29 @@
+.page__right {
+    &__sessions {
+        background-color: red;
+        width: 100%;
+        &__list__el {
+            list-style: none;
+            padding: .8rem;
+            margin-block: .3rem;
+            background-color: blue;
+        }
+    }
+    &__createsession {
+        background-color: green;
+        width: 100%;
+    }
+}
+
+.listeetudiants {
+    display: flex;
+    flex-wrap: wrap;
+    &__el {
+        list-style: none;
+        min-width: 20%;
+        background-color: pink;
+        margin-inline-end: 0.2rem;
+        margin-block: .2rem;
+    }
+}
+

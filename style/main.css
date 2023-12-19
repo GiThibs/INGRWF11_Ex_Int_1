@@ -62,6 +62,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgb(255, 249, 249);
   width: 55%;
   -webkit-box-pack: center;
@@ -209,6 +211,37 @@ output {
   color: white;
   padding: 1px 3px 1px 3px;
   border-radius: 2px;
+}
+
+.page__right__sessions {
+  background-color: red;
+  width: 100%;
+}
+.page__right__sessions__list__el {
+  list-style: none;
+  padding: 0.8rem;
+  margin-block: 0.3rem;
+  background-color: blue;
+}
+.page__right__createsession {
+  background-color: green;
+  width: 100%;
+}
+
+.listeetudiants {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.listeetudiants__el {
+  list-style: none;
+  min-width: 20%;
+  background-color: pink;
+  -webkit-margin-end: 0.2rem;
+          margin-inline-end: 0.2rem;
+  margin-block: 0.2rem;
 }
 
 .hidden {
