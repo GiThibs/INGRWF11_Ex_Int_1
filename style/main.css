@@ -216,21 +216,29 @@ output {
   border-radius: 2px;
 }
 
-.page__right__sessions {
-  background-color: red;
+.pageevalform {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
+  height: 100vh;
 }
-.page__right__sessions__list__el {
-  list-style: none;
-  padding: 0.8rem;
-  margin-block: 0.3rem;
-  background-color: blue;
+.pageevalform__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: rgb(235, 235, 235);
+  position: fixed;
+  padding: 4rem;
+  width: 25%;
+  height: 100vh;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
-.page__right__createsession {
-  background-color: green;
-  width: 100%;
-}
-
 .listeetudiants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -309,6 +317,10 @@ output {
 
 .notdone {
   background-color: red;
+}
+
+.infoeval {
+  text-align: right;
 }
 
 .hidden {
