@@ -5,31 +5,42 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: Verdana;
 }
 
 .page {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
   height: 100vh;
 }
 .page__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgb(235, 235, 235);
   padding: 4rem;
   width: 45%;
-  align-content: start;
+  -ms-flex-line-pack: start;
+      align-content: start;
 }
 .page__left__profil {
   width: 100%;
   height: 10rem;
   margin-block: 3rem;
   background-color: rgb(214, 214, 214);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .page__left__profil__pic {
   height: 100%;
@@ -48,28 +59,40 @@
 }
 .page__right {
   padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: rgb(255, 249, 249);
   width: 55%;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .page__right__formations h3 {
-  margin-block-end: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 .page__right__formations__item {
-  margin-block-end: 1rem;
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
 }
 .page__right__formations__item__evals {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
 }
 .page__right__formations__item__evals__item {
   width: 25%;
   padding: 1rem;
   margin-block: 1rem;
-  margin-inline-end: 1rem;
+  -webkit-margin-end: 1rem;
+          margin-inline-end: 1rem;
   border: 1px solid black;
 }
 
@@ -77,21 +100,32 @@
   width: 100%;
 }
 .formulaire__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
-  height: 8rem;
+  height: 7rem;
 }
 .formulaire__header__nav {
   width: 30%;
-  padding-inline-start: 2rem;
+  -webkit-padding-start: 2rem;
+          padding-inline-start: 2rem;
 }
 .formulaire__header__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 70%;
-  justify-content: end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 .formulaire__header__info__item {
   padding-inline: 2rem;
@@ -102,50 +136,79 @@
   border: none;
 }
 .formulaire__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background-color: rgb(209, 209, 209);
   width: 100%;
+  height: calc(100vh - 14rem);
   text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.8rem;
+}
+.formulaire__form__valid {
+  padding: 0.8rem 1rem;
+  height: 4rem;
+  border-radius: 0.8rem;
+  margin-inline: 10rem;
 }
 .formulaire__form__fieldset {
   width: 100%;
-  height: calc(100vh - 16rem);
   border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
 }
 .formulaire__form__fieldset h1 {
   width: 100%;
-  margin-block: 1rem;
 }
 .formulaire__form__fieldset p {
   width: 100%;
-  margin-block: 1rem;
 }
 .formulaire__form__fieldset label {
   width: 17%;
   height: 18rem;
   border: 2px solid black;
+  border-radius: 1rem;
   padding: 2rem;
-  margin-block-end: 1rem;
 }
 .formulaire__form__fieldset input[type=radio] {
-  margin-block: 1rem;
   display: none;
 }
 .formulaire__form__fieldset input[type=radio]:checked + label {
   border: 2px solid green;
 }
 .formulaire__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 100%;
-  height: 8rem;
-  justify-content: space-evenly;
-  align-content: space-evenly;
+  height: 7rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: space-evenly;
+      align-content: space-evenly;
+}
+
+output {
+  background-color: #2375D6;
+  color: white;
+  padding: 1px 3px 1px 3px;
+  border-radius: 2px;
 }
 
 .hidden {

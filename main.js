@@ -1,5 +1,7 @@
-import {$btnAfter, $btnBefore} from "./js/evalEtudiant.js";
+// import {$btnAfter, $btnBefore, chart} from "./js/evalEtudiant.js";
 
-$btnAfter()
+// chart
 
-$btnBefore()
+// $btnAfter();
+
+// $btnBefore();
