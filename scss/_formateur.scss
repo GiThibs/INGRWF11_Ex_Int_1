@@ -27,3 +27,45 @@
     }
 }
 
+.contenueval {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.resumesession {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: green;
+    justify-content: space-between;
+}
+.evalcases {
+    display: flex;
+    flex-wrap: wrap;
+}
+.evalcase {
+    background-color: aqua;
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+.listeevalsession {
+    width: 100%;
+}
+.listeevalsession_el {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 2rem;
+    padding: 1rem;
+    background-color: pink;
+    justify-content: space-between;
+}
+
+.done {
+    background-color: Blue;
+}
+
+.notdone {
+    background-color: red;
+}
