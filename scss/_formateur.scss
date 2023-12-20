@@ -88,17 +88,14 @@
             flex-wrap: wrap;
             padding: 1rem;
             width: 100%;
-            background-color: green;
             &__etud {
                 width: 30%;
                 text-align: right;
                 padding-inline: 2rem;
-                background-color: blue;
             }
             &__form {
                 width: 70%;
                 padding-inline: 2rem;
-                background-color: pink;
             }
         }
         &__mid {

@@ -256,18 +256,15 @@ output {
   flex-wrap: wrap;
   padding: 1rem;
   width: 100%;
-  background-color: green;
 }
 .pageevalform__right__top__etud {
   width: 30%;
   text-align: right;
   padding-inline: 2rem;
-  background-color: blue;
 }
 .pageevalform__right__top__form {
   width: 70%;
   padding-inline: 2rem;
-  background-color: pink;
 }
 .pageevalform__right__mid {
   width: 100%;
