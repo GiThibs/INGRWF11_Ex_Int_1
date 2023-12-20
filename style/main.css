@@ -231,7 +231,6 @@ output {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
 }
 .pageevalform__left {
   display: flex;
@@ -250,7 +249,6 @@ output {
   display: flex;
   flex-wrap: wrap;
   width: 75%;
-  height: 100vh;
   background-color: rgb(255, 255, 255);
 }
 .pageevalform__right__top {
@@ -258,7 +256,6 @@ output {
   flex-wrap: wrap;
   padding: 1rem;
   width: 100%;
-  height: auto;
   background-color: green;
 }
 .pageevalform__right__top__etud {
@@ -274,11 +271,20 @@ output {
 }
 .pageevalform__right__mid {
   width: 100%;
-  height: auto;
 }
 .pageevalform__right__bot {
   width: 100%;
-  height: 30%;
+  display: flex;
+  justify-content: end;
+}
+
+.validform {
+  background-color: blue;
+  color: white;
+  padding-inline: 1rem;
+  padding-block: 0.5rem;
+  text-decoration: none;
+  border-radius: 0.5rem;
 }
 
 output {
