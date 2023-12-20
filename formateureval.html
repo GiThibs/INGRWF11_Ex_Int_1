@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Connexion</title>
+    <title>Evaluation formateur</title>
     <link rel="stylesheet" href="/style/main.css">
 </head>
 <body>
     
     <section class="pageevalform">
+
       <div class="pageevalform__left">
         <p class="infoeval">
             img + Nom formateur <br><br>
@@ -17,17 +18,79 @@
             Formation<br>Nom formation<br><br>
             Session<br>Code session<br><br>
             Date<br>11/00/12<br><br>
-
         </p>
       </div>
+
       <div class="pageevalform__right">
-        
+
+        <div class="pageevalform__right__top">
+          <div class="pageevalform__right__top__etud">
+            <p>IMG + Nom etud</p>
+          </div>
+          <div class="pageevalform__right__top__form">
+            <form action="" class="form">
+            
+              <h2 class="title">Votre évaluation</h2>
+              <div class="quote">
+                <label class="label" for="espritanalyse">Esprit d'analyse</label>
+                  <input type="range" min="1" max="4" value="1" name="espritanalyse" id="espritanalyse">
+                  <output for="espritanalyse">1</output>
+              </div><!-- .quote -->
+              
+                <div class="quote">
+                <label class="label" for="curiosite">Curiosité intellectuelle</label>
+                  <input type="range" min="1" max="4" value="1" name="curiosite" id="curiosite">
+                  <output for="curiosite" class="is-danger">1</output>
+              </div><!-- .quote -->
+              
+                <div class="quote">
+                <label class="label" for="autonomie">Autonomie</label>
+                  <input type="range" min="1" max="4" value="1" name="autonomie" id="autonomie">
+                  <output for="autonomie">1</output>
+              </div><!-- .quote -->
+              
+                <div class="quote">
+                <label class="label" for="acceptation">Acceptation de la critique</label>
+                  <input type="range" min="1" max="4" value="1" name="acceptation" id="acceptation">
+                  <output for="acceptation">1</output>
+              </div><!-- .quote -->
+              
+                <div class="quote">
+                <label class="label" for="organisation">Sens de l'organisation</label>
+                  <input type="range" min="1" max="4" value="1" name="organisation" id="organisation">
+                  <output for="organisation">1</output>
+              </div><!-- .quote -->
+              
+              <div class="quote">
+              <label class="label" for="motivation">Motivation</label>
+                <input type="range" min="1" max="4" value="1" name="motivation" id="motivation">
+                <output for="motivation">1</output>
+            </div><!-- .quote -->
+              <br>
+              <div class="control">
+                <button class="button is-danger">Envoyer</button>
+              </div>
+              </form>
+          </div>
+        </div>
+
+        <div class="pageevalform__right__mid">
+          <div class="chart">
+            <canvas id="radarChart"></canvas>
+        </div>
+        </div>
+
+        <div class="pageevalform__right__bot">
+
+        </div>
+
       </div>
+
     </section>
 
 
-    <script type="module" src="formateur.js"></script>
-    <script type="module" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
+    <script type="module" src="./js/formateureval.js"></script>
 
 </body>
 </html>
