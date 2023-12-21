@@ -1,7 +1,10 @@
 const formLogin = document.querySelector('.form_login')
 const loginField = document.getElementById('login')
 const passField = document.getElementById('pass')
+const btnPageEtud = document.querySelector('.btnpageetudiant')
 
+
+//    ------- Redirection après login (uniquement formateur) ----------
 
 formLogin.addEventListener('submit', e =>{
     e.preventDefault()
@@ -30,4 +33,11 @@ formLogin.addEventListener('submit', e =>{
         }
     })
     .catch(error => console.error('Erreur lors de la requête:', error));
+})
+
+//    ------- Redirection vers etudiant ----------
+
+btnPageEtud.addEventListener('click', (e) => {
+    e.preventDefault()
+    window.location.href = '../etudiant.html'
 })

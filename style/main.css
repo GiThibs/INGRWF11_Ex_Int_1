@@ -1,5 +1,11 @@
-.test {
-  background-color: red;
+.btnpageetudiant {
+  width: 8rem;
+  margin: 5rem;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
 }
 
 * {
@@ -169,6 +175,33 @@ output {
   color: white;
   padding: 1px 3px 1px 3px;
   border-radius: 2px;
+}
+
+.page__right__sessions {
+  display: flex;
+  width: 100%;
+}
+.page__right__sessions__list {
+  width: 100%;
+  padding: 1rem;
+}
+.page__right__sessions__list h1 {
+  margin-block-end: 1rem;
+}
+.page__right__sessions__list__el {
+  list-style: none;
+  padding: 1rem;
+  background-color: lime;
+  width: 100%;
+  margin-block-end: 1rem;
+}
+.page__right__createsession {
+  width: 100%;
+  padding: 1rem;
+}
+.page__right__createsession__btn {
+  padding: 0.5rem;
+  margin-block-end: 1rem;
 }
 
 .listeetudiants {

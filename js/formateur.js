@@ -5,8 +5,18 @@ let etudiants = []
 let templateetud = ``
 let listeEvalEl = document.querySelector('.listeevalsession')
 let btncreatesession = document.querySelector('.btncreatesession')
+let btnaddsession = document.querySelector('.page__right__createsession__btn')
 let formsession = document.querySelector('.formtoaddsession')
 
+
+
+
+//    ------- Affiche/Enlève le formulaire pour ajouter une session ----------
+btnaddsession.addEventListener('click', (e) => {
+    formsession.classList.toggle('hidden')
+})
+
+//    ------- Redirection vers evaluation formateur ----------
 listeEvalEl.addEventListener('click', (e) => {
     e.preventDefault()
     if(e.target.classList.contains('evalcase')) {
@@ -16,6 +26,8 @@ listeEvalEl.addEventListener('click', (e) => {
     }
 })
 
+
+//    ------- Affiche liste étudiants invités ----------
 addetud.addEventListener('click', (e) => {
     e.preventDefault()
     if(etudtoadd.value == ""){
@@ -35,10 +47,11 @@ addetud.addEventListener('click', (e) => {
     etudtoadd.value = ""
 })
 
+//    ------- Création session ----------
 btncreatesession.addEventListener('click', (e) => {
     e.preventDefault()
     console.log(e.target)
 
-    // create le formdata()
+    // créer le formdata()
 })
 

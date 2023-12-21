@@ -1,4 +1,37 @@
-// ---------- Page accueil -------------
+
+// ---------- Page accueil formateur -------------
+//    ------- Liste sessions ----------
+
+.page__right {
+    &__sessions {
+        display: flex;
+        width: 100%;
+        &__list {
+            width: 100%;
+            padding: 1rem;
+            h1 {
+                margin-block-end: 1rem;
+            }
+            &__el {
+                list-style: none;
+                padding: 1rem;
+                background-color: lime;
+                width: 100%;
+                margin-block-end: 1rem;
+            }
+        }
+    }
+    //    ------- Création session ----------
+    &__createsession {
+        width: 100%;
+        padding: 1rem;
+        &__btn {
+            padding: .5rem;
+            margin-block-end: 1rem;
+        }
+    }
+
+}
 
 .listeetudiants {
     display: flex;
@@ -11,6 +44,8 @@
         margin-block: .2rem;
     }
 }
+
+// ---------- Page accueil session -------------
 
 .contenueval {
     width: 100%;

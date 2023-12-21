@@ -7,6 +7,18 @@ let dataEval
 let currentQ = 0
 
 
+let formData
+//    ------- Récupère data formulaire ----------
+form.addEventListener('submit', e => {
+    e.preventDefault();
+    formData = new FormData(form);
+    dataEval = Array.from(formData.values());
+    chart.data.datasets[1].data = dataEval;
+    chart.update();
+});
+
+
+//    ------- RADAR ----------
 ranges.forEach(range => {
   range.addEventListener('change', e => {
     e.preventDefault()
@@ -15,15 +27,6 @@ ranges.forEach(range => {
   })
 })
 
-let formData
-
-form.addEventListener('submit', e => {
-    e.preventDefault();
-    formData = new FormData(form);
-    dataEval = Array.from(formData.values());
-    chart.data.datasets[1].data = dataEval;
-    chart.update();
-});
 
 const datasets = [{
     label: 'Cible',

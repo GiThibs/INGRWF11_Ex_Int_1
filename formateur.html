@@ -9,8 +9,13 @@
 </head>
 <body>
     
+  <!-- *********************** Body *********************** -->
+
     <section class="page">
       <div class="page__left">
+
+        <!-- *********************** Profil *********************** -->
+
         <div class="page__left__profil">
           <div class="page__left__profil__pic">IMAGE</div>
           <div>
@@ -18,6 +23,9 @@
           <p>Actuellement en formation<br>Nom de la formation</p>
           </div>
       </div>
+
+      <!-- *********************** Notifications *********************** -->
+
       <div class="page__left__notif">
           <h1>Mes Notifications</h1>
           <ul>
@@ -29,20 +37,21 @@
 
       <div class="page__right">
 
+        <!-- *********************** Liste des sessions *********************** -->
 
-        <div class="page__right__sessions          hidden">
+        <div class="page__right__sessions          ">
           <ul class="page__right__sessions__list">
             <h1>Session(s)</h1>
-            <li class="page__right__sessions__list__el"></li>
+            <li class="page__right__sessions__list__el">Session 1</li>
+            <li class="page__right__sessions__list__el">Session 2</li>
           </ul>
-          <div class="page__right__sessions__create">
-          </div>
         </div>
         
+        <!-- *********************** Création d'une session *********************** -->
 
-        <div class="page__right__createsession          hidden">
-          <button class="page__right__sessions__create__btn">Create sessions<i>+</i></button>
-          <form class="formtoaddsession">
+        <div class="page__right__createsession          ">
+          <button class="page__right__createsession__btn">Create sessions<i>+</i></button>
+          <form class="formtoaddsession hidden">
             <h1>Création d'une session</h1>
             
             <label for="nomcentre">Choisissez votre centre de formation :</label>
@@ -70,15 +79,21 @@
           </form>
         </div>
 
+        <!-- *********************** Contenu d'une session *********************** -->
+
         <div class="contenueval">
 
+        <!-- *********************** Résumé de la session *********************** -->
+
           <div class="resumesession">
-            <p>Nom<br>Nbre</p>
+            <p>Nom session<br>Nbre étudiants</p>
             <div class="evalcases">
               <div class="evalcase">01/01/01</div>
               <div class="evalcase">02/02/02</div>
             </div>
           </div>
+
+        <!-- *********************** Liste des évaluations *********************** -->
 
           <ul class="listeevalsession">
 
