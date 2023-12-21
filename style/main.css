@@ -76,6 +76,13 @@
   margin-inline-end: 1rem;
   border: 1px solid black;
 }
+.page__right .connectBtn {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
 
 .formulaire {
   width: 100%;

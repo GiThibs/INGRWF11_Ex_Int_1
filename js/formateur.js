@@ -3,10 +3,18 @@ let addetud = document.querySelector('.addetudiant')
 let etudtoadd = document.querySelector('.etudtoadd')
 let etudiants = []
 let templateetud = ``
-
+let listeEvalEl = document.querySelector('.listeevalsession')
 let btncreatesession = document.querySelector('.btncreatesession')
 let formsession = document.querySelector('.formtoaddsession')
 
+listeEvalEl.addEventListener('click', (e) => {
+    e.preventDefault()
+    if(e.target.classList.contains('evalcase')) {
+        window.location.href = '../formateureval.html'
+    } else {
+        return
+    }
+})
 
 addetud.addEventListener('click', (e) => {
     e.preventDefault()
